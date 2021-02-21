@@ -4,7 +4,8 @@ import java.time.LocalDateTime;
 
 public class Appointment {
     private User mProvider;
-    private Patient mPatient;
+    private PatientRecord mPatientRecord;
     private String mTitle;
+    private String mDescription;
     private LocalDateTime mDateTime;
 }

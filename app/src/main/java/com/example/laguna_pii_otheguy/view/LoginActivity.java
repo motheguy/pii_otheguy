@@ -1,4 +1,4 @@
-package com.example.laguna_pii_otheguy.controller;
+package com.example.laguna_pii_otheguy.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

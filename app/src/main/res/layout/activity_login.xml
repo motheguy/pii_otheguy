@@ -13,7 +13,7 @@
         android:paddingTop="24dp"
         android:paddingRight="24dp"
         android:gravity="center"
-        tools:context=".controller.LoginActivity">
+        tools:context=".view.LoginActivity">
 
         <ImageView
             android:layout_width="wrap_content"

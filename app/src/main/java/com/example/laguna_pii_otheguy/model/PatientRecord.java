@@ -2,7 +2,7 @@ package com.example.laguna_pii_otheguy.model;
 
 import java.util.List;
 
-public class Patient {
+public class PatientRecord {
     private String mLastName;
     private String mFirstName;
     private String mProfilPicture;
@@ -10,5 +10,4 @@ public class Patient {
     private String mDescription;
     private List<String> mMainFeatures;
     private List<Appointment> mAppointments;
-
 }

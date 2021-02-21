@@ -11,7 +11,8 @@ public class User {
     private Enum mJob;
     private String mContact;
     private String mDescription;
-    private List<Patient> Patients;
+    private List<PatientRecord> mPatientRecords;
+    private List<Conversation> mConversations;
 
     public String getLastName() {
         return mLastName;

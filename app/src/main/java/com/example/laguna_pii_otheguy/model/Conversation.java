@@ -4,5 +4,5 @@ import java.util.List;
 
 public class Conversation {
     private List<User> mTextingUsers;
-    private List<Message> mMessages;
+    //private List<Message> mMessages;
 }
