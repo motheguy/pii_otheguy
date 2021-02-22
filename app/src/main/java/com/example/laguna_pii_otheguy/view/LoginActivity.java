@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.laguna_pii_otheguy.DatabaseManager;
 import com.example.laguna_pii_otheguy.R;
 import com.example.laguna_pii_otheguy.model.User;
 
@@ -18,6 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button mLogInButton;
     private TextView mSignUpLink;
     private User mUser;
+    private DatabaseManager mDatabaseManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,10 @@ public class LoginActivity extends AppCompatActivity {
         mPasswordInput = (EditText) findViewById(R.id.login_input_password);
         mLogInButton=findViewById(R.id.login_btn);
         mSignUpLink = (TextView) findViewById(R.id.login_link_sign_up);
+
+        mDatabaseManager = new DatabaseManager(this);
+        mDatabaseManager.signUpUser(new User("test@test.com","rikiki65"));
+        mDatabaseManager.close();
 
         mLogInButton.setOnClickListener(new View.OnClickListener(){
             @Override
